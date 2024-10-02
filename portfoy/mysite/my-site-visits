@@ -1,0 +1,82 @@
+<?php
+$servername = "localhost:8889";
+$username = "root";
+$password = "Maho.168";
+$dbname = "mysite";
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
+// MySQLi ile bağlantı
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Bağlantı hatası: " . $conn->connect_error);
+}
+
+function getUserIP() {
+    if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+        return $_SERVER['HTTP_CLIENT_IP'];
+    } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        return $_SERVER['HTTP_X_FORWARDED_FOR'];
+    } else {
+        return $_SERVER['REMOTE_ADDR'];
+    }
+}
+
+$ip_address = getUserIP();
+error_log("Dönen IP Adresi: " . $ip_address);
+
+$ip_address = getUserIP();
+$api_key = "c489922f30bad1"; // API anahtarını buraya yerleştir
+$ipinfo_url = "http://ipinfo.io/{$ip_address}?token={$api_key}";
+
+$location_info = file_get_contents($ipinfo_url);
+$location_data = json_decode($location_info, true);
+
+$country = $location_data['country'] ?? 'Unknown';
+$region = $location_data['region'] ?? 'Unknown';
+$city = $location_data['city'] ?? 'Unknown';
+$continent = $location_data['continent'] ?? 'Unknown';
+
+$page_name = $_GET['page'] ?? 'Unknown'; // Sayfa adı kontrolü yap
+
+// Ziyaretin olup olmadığını kontrol et
+$stmt = $conn->prepare("SELECT * FROM visits WHERE page_name = ? AND ip_address = ? AND DATE(visit_time) = CURDATE()");
+$stmt->bind_param("ss", $page_name, $ip_address);
+$stmt->execute();
+$result = $stmt->get_result();
+
+if ($result === false) {
+    error_log("Sorgu hatası: " . $conn->error);
+}
+
+// Eğer ziyaret yoksa yeni kayıt ekle
+if ($result->num_rows === 0) {
+    // Yeni ziyaret kaydet
+    $stmt = $conn->prepare("INSERT INTO visits (page_name, ip_address, country, city, region, continent) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssssss", $page_name, $ip_address, $country, $city, $region, $continent);
+    if (!$stmt->execute()) {
+        error_log("Ziyaret kaydı hatası: " . $stmt->error);
+    }
+
+    // Toplam ziyaret sayısını güncelle
+    $stmt = $conn->prepare("INSERT INTO pages (page_name, visit_count) VALUES (?, 1) ON DUPLICATE KEY UPDATE visit_count = visit_count + 1");
+    $stmt->bind_param("s", $page_name);
+    if (!$stmt->execute()) {
+        error_log("Toplam ziyaret güncelleme hatası: " . $stmt->error);
+    }
+}
+
+// Ziyaret verilerini döndür
+$stmt = $conn->prepare("SELECT * FROM visits WHERE page_name = ? AND ip_address = ? AND DATE(visit_time) = CURDATE()");
+$stmt->bind_param("ss", $page_name, $ip_address);
+$stmt->execute();
+$result = $stmt->get_result();
+$rows = $result->fetch_all(MYSQLI_ASSOC);
+echo json_encode($rows); // Kontrol için verileri döndür
+
+// Bağlantıyı kapat
+$conn->close();
+?>
