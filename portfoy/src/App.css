@@ -1,0 +1,30 @@
+
+:root {
+  --primary-color: rgb(230, 126, 34);
+  --secondery-color: #F39C12;
+  --bg-color: #e3e3e3;
+  --text-color : #0a1117;
+  --primary-hover-color: #e67d22cd; 
+  --third-color: hwb(46 22% 17%); 
+  --input-color: #c0c0c0;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.navbar-menu .active {
+  font-weight: 700;
+  background-color: var(--secondery-color);
+}
+
+.logout-i {
+  color: gray;
+}

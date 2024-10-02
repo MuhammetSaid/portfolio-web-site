@@ -1,0 +1,120 @@
+.admin-header {
+    width: 100%;
+    border-bottom: solid 1px rgb(181, 180, 180);
+    background-color: white;
+    position: fixed;
+    z-index: 5;
+}
+.admin-header .admin-header-content {
+    display: flex;
+    align-items: center;
+}
+
+.admin-header-logo {
+    width: 280px;
+    height: 7.5vh;
+    border-right: solid 1px rgb(181, 180, 180);
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.admin-header-logo img:nth-child(1) {
+    width: 20%;
+    margin-left: 40px;
+}
+.admin-header-logo img:nth-child(2) {
+    width: 46%;
+    margin-left: 12px;
+}
+
+.admin-header-header {
+    height: 7.5vh;
+    width: 76%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    align-items: center;
+}
+
+.admin-header-search {
+    width: 200px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.admin-header-search form {
+    display: flex;
+    align-items: center;
+}
+
+.admin-header-search form button {
+    padding: 9.4px;
+    border: solid 1px gray;
+    border-left: none;
+    background-color: rgb(187, 187, 187);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.admin-header-search  input {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(187, 187, 187);
+    border: solid 1px gray;
+    border-radius: 10px 0px 0px 10px;
+    padding: 10px;
+    outline: none;
+}
+
+.admin-header-setting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-header-profile {
+    display: flex;
+    align-items: center;
+}
+
+.admin-header-profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.admin-header-profile-img img {
+    width: 100%;
+}
+
+.admin-header-profile h4 {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.admin-header-i {}
+
+
+.messages-btn {
+    background: none;
+    border: none;
+    position: relative;
+    margin: 0 30px;
+    cursor: pointer;
+}
+.message-btn-i {
+    font-size: 26px;
+    color: rgb(107, 107, 107);
+}
+
+.messages-btn-span {
+    position: absolute;
+    top: -6px;
+    background-color: red;
+    padding: 1px 3px;
+    border-radius: 8px;
+    left: 20px;
+}
+

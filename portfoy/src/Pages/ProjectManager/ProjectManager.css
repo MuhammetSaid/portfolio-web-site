@@ -1,0 +1,14 @@
+.main-project-manager {
+    margin-left: 300px;
+    margin-top: 30px;
+    background-color: white;
+    width: 78%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.main-project-manager-content {
+    width: 94%;
+    overflow: hidden;
+} 

@@ -1,0 +1,38 @@
+.main-chat {
+    margin-left: 300px;
+    margin-top: 30px;
+    background-color: white;
+    width: 78%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-chat-content{
+    width: 94%;
+    overflow: hidden;
+} 
+
+.blog-manager-content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: solid 2px gray;
+}
+
+.chat-new-message {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-message-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    width: 100%;
+}

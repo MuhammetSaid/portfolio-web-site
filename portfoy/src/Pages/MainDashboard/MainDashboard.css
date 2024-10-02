@@ -1,0 +1,104 @@
+.main-dashboard {
+    margin-left: 300px;
+    margin-top: 30px;
+    width: 78%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.main-dashboard-content {
+    width: 94%;
+    overflow: hidden;
+}
+
+
+.main-dashboard-manager-content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: solid 2px gray;
+}
+
+.search form {
+    width: 250px;
+    position: relative;
+    margin-right: 60px;
+}
+
+.search form input {
+    width: 100%;
+    padding: 10px ;
+    padding-right: 30px;
+    border: none;
+    background-color: rgb(184, 184, 184);
+    outline: none;
+    border-radius: 10px;
+}
+
+.search form button {
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    background-color: transparent;
+    border: none;
+}
+
+.dashboard-education {
+    width: 100%;
+    margin: 40px 0;
+}
+
+
+.dashboard-edu-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard-education h2 {
+    display: flex;
+    align-items: center;
+}
+
+.admin-edu-i {
+    margin-right:12px;
+    font-size: 30px;
+    fill: var(--primary-color);
+    background-color: #e67d2281;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.dashboard-edu-header button {
+    background-color: var(--primary-color);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dashboard-edu-content {
+    margin-top: 30px;
+}
+
+.edu-input {
+    padding: 4px;
+
+}
+
+.edu-grade-input {
+    width: 40px;
+    outline: none;
+}
+
+.edu-start-input , .edu-end-input {
+    width: 40px;
+}
+.edu-gpa-input {
+    width: 40px;
+}

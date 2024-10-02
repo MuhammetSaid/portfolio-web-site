@@ -1,0 +1,48 @@
+.modal-overlay-delete {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Arka planı karartır */
+    display: flex;
+    justify-content: center; /* Yatay ortalama */
+    align-items: center; /* Dikey ortalama */
+}
+
+.modal-content-delete {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.delete-text h2 {
+    margin-top: 20px;
+}
+
+.delete-text h2 span {
+    font-size: 17px;
+}
+
+.delete-btns {
+    display: flex;
+    justify-content: end;
+}
+
+.delete-btns button{
+    background-color: transparent;
+    color: blue;
+    padding: 10px 15px;
+    border: none;
+    margin: 10px 14px;
+    cursor: pointer;
+}
+
+.modal-delete-btn {
+    color: white !important;
+    background-color: red !important;
+    border-radius: 8px !important;
+}

@@ -1,0 +1,62 @@
+
+.admin-sections .admin-navbar {
+    width: 280px;
+    height: 100vh;
+    border-right: solid 1px rgb(181, 180, 180);
+    position: fixed;
+    border-top:solid 1px rgb(181, 180, 180);
+    background-color: white;
+}
+
+.admin-navbar ul {
+    list-style: none;
+    padding-bottom: 10px;
+    border-bottom:solid 1px rgb(181, 180, 180);
+    margin-top: 40px;
+}
+
+.admin-navbar ul li {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.span-menu {
+    width: 16px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-radius: 0 10px 10px 0;
+    margin-right: 30px;
+}
+
+.admin-navbar ul li a {
+    text-decoration: none;
+    
+    display: flex;
+    align-items: center;
+}
+
+.active span {
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.logout-btn {
+    background-color: white;
+    font-size: 19px;
+    color: gray;
+    font-weight: 800;
+    margin: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logout-btn .logout-i {
+    fill: gray;
+    margin-right:10px;
+}

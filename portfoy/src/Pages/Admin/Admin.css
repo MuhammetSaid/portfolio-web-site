@@ -1,0 +1,28 @@
+.main-admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-admin .main-admin-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.admin-sections {
+    width: 100%;
+    display: flex;
+    margin-top: 73px;
+
+}
+
+
+.admin-content {
+    width: 100%;
+    margin-left: 300px;
+}

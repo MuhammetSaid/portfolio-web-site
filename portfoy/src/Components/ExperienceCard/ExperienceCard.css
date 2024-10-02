@@ -1,0 +1,70 @@
+.main-experience-card {
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    border: solid 2px var(--text-color);
+    margin: 20px 0;
+}
+
+.main-experience-card-content {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+
+.main-experience-card-content .experience-img{
+    width: 250px;
+    background-color: var(--bg-color);
+    padding: 50px 10px;
+    border-radius: 12px;
+    margin-right: 50px;
+
+}
+
+.main-experience-card-content .experience-img img {
+    width: 100%;
+}
+
+.main-experience-card-content .experience-text h1 {
+    margin: 20px 0;
+}
+
+.main-experience-card-content .experience-text p{
+    margin: 10px 0;
+}
+
+
+.main-experience-card-content .experience-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.experience-skills {
+    display: flex;
+}
+
+.experience-skills p {
+    padding: 6px;
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .main-experience-card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .experience-img {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+        margin: 0 !important;
+    }
+
+} 

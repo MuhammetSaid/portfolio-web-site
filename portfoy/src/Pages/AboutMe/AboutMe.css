@@ -1,0 +1,193 @@
+.main-aboutme {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-aboutme .main-aboutme-content {
+    width: 90%;
+    position: relative;
+    margin-top: 120px;
+}
+
+
+.main-aboutme .main-aboutme-content .aboutme-top {
+    width: 100%;
+    height: 37vh;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+
+.main-aboutme .main-aboutme-content .aboutme-top  h1 {
+    margin-top: 55px;
+}
+
+.main-aboutme .aboutme-text {
+    width: 100%;
+    top: 140px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 140px;
+}
+
+.aboutme-text-text {
+    width: 55%;
+    background-color: var(--bg-color);
+    border: solid 2px var(--text-color);
+    padding: 50px;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.aboutme-text-text h2 {
+    color: var(--primary-color);
+}
+
+.aboutme-right {
+    margin-bottom: 50px;
+    width: 30%;
+}
+
+.aboutme-image {
+    background-color: var(--bg-color);
+    border: solid 2px var(--text-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.aboutme-image-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.aboutme-image-img img {
+    width: 100%;
+    border-radius: 50%;
+    border: solid 2px var(--text-color);
+}
+
+.aboutme-social {
+    margin-top: 20px;
+    border: solid 2px var(--text-color);
+    padding: 16px;
+}
+.aboutme-social ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.aboutme-social ul li {
+    
+}
+.aboutme-social ul li a {
+    padding: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.aboutme-top span {
+    position: absolute;
+
+    width: 170px;
+    height: 220px;
+    background-color:rgba(251, 160, 81, 0.73);
+}
+
+.aboutme-top .span1 {
+    bottom: -20px;
+    left: 10%;
+    transform: skew(19deg, -9deg);
+    border-radius: 0 20px 0 0 ;
+}
+
+.aboutme-top .span2 {
+    
+    bottom: -20px;
+    left: 40%;
+    transform: skew(-19deg, -9deg);
+    border-radius: 20px 0 0 0 ;
+    z-index: -1;
+}
+.aboutme-top .span3 {
+    
+    top: -20px;
+    right: 10%;
+    transform: skew(-19deg, -9deg);
+    border-radius: 0 0 20px 0 ;
+}
+
+.aboutme-text-text-content h2 {
+    margin: 20px 0;
+}
+
+.aboutme-text-text-content  p {
+    font-size: 17px;
+}
+
+.first-word {
+    margin-left: 50px;
+}
+
+.color-p {
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 600px) {
+    .main-aboutme {
+        width: 100%;
+    }
+    .main-aboutme-content {
+        width: 98% !important;
+    }
+    .aboutme-top {
+        width: 100%;
+    }
+    .aboutme-top h1 {
+        z-index: 14;
+    }
+    .aboutme-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutme-text-text {
+        width: 86%;
+        padding: 10px;
+    }
+    .aboutme-text-text-content {
+        width: 96%;
+    }
+    .span1 , .span2 {
+        display: none;
+    }
+    .aboutme-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .aboutme-image {
+        width: 300px;
+        padding: 30px;
+    }
+
+    .aboutme-social {
+        width: 83%;
+        display: flex;
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,39 @@
+.main-blog {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-blog .main-blog-content {
+    width: 90%;
+    margin: 120px 0;
+}
+
+
+
+.first-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+
+.first-cards .first-cards-small {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.last-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 992px) {
+    
+}

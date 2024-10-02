@@ -1,0 +1,359 @@
+
+
+.main-home {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-home-content {
+    width: 75%;
+    margin-top: 120px;
+    z-index: 2;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+
+    .main-home-content  {
+        width: 90%;
+        padding: 0 !important;
+    }
+
+    
+
+    .main-home .sus1 {
+        width: 350px !important;
+        height: 350px !important;
+        bottom: -500px !important;
+    }
+    .main-home .sus2 {
+        bottom: -500px !important;
+    }
+    .main-home .sus3 {
+        bottom: -500px !important;
+    }
+}
+
+.main-home-content p {
+    background-color: transparent;
+}
+
+.main-home .sus {
+    position: absolute;
+    display: flex;
+    box-shadow: 0 0 30px rgba(241, 135, 41, 0.879), /* Parlak altın gölge */
+                0 0 60px rgba(189, 116, 52, 0.604) ;
+    border-radius: 50%;
+    border-top: solid 13px var(--primary-color);
+    border-right: solid 13px var(--primary-color);
+}
+.main-home .sus1{
+    width: 440px;
+    height: 440px;
+    border-radius: 0 550% 0 0;
+    bottom: 0;
+    left: 0;
+}
+
+.main-home .sus2{
+    width: 230px;
+    height: 230px;
+    border-radius: 0 550% 0 0;
+    bottom: 0;
+    left: 0;
+}
+
+.main-home .sus3{
+    width: 100px;
+    height: 100px;
+    border-radius: 0 550% 0 0;
+    bottom: 0;
+    left: 0;
+}
+
+.main-home-content-section1 {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*======================== EDUCATİON ============================*/
+
+.education{
+    width: 100%;
+    background-color: transparent;
+    margin-top: 120px;
+    border-left: solid 3px var(--text-color);
+    padding: 20px;
+    position: relative;
+}
+.education .education-title {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -22px;
+}
+
+
+.education .education-title .i {
+    margin: 0 22px;
+    font-size: 32px;
+    padding: 15px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    .education  {
+        padding: 20px 0 !important;
+    }
+}
+
+
+
+.circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: solid 3px var(--text-color);
+    border-radius: 50%;
+    top: 0;
+    left: -13px;
+    background-color: var(--bg-color);
+}
+
+.skills {
+    margin-top: 0;
+    width: 100%;
+    background-color: transparent;
+    border-left: solid 3px var(--text-color);
+    padding: 20px;
+    position: relative;
+}
+
+.skills-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 30px ;
+    width: 100%;
+    margin-bottom: 30px;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .skills-cards {
+        margin: 20px 10px !important;
+        margin-right: 0 !important;
+    }
+
+}
+
+.certificates {
+    margin-top: 0;
+    width: 100%;
+    border-left: solid 3px var(--text-color);
+    padding: 20px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.certificates-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 30px ;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .certificates-cards {
+        margin: 40px 30px !important;
+        margin-right: 0 !important;
+        width: 95%;
+    }
+
+}
+
+
+/*===================== problem solving =======================*/
+
+.problem-solving {
+    margin-top: 0;
+}
+
+.problem-solving-cards {
+    margin: 70px 30px ;
+    margin-bottom: 30px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.experience {
+    margin-top: 0;
+}
+
+.experience-cards {
+    margin: 70px 30px ;
+    margin-bottom: 30px ;
+
+}
+
+
+.main-blog-home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.main-blog-home-content , .main-project-home-content{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main-blog-home-content h1,.main-project-home-content h1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: solid 4px var(--primary-color);
+    padding: 10px;
+}
+
+.main-blog-home-content h1 .blog-i {
+    margin:0 20px ;
+    font-size: 31px;
+}
+
+.blogs-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.blogs-container .blogs-container-card-l-main {
+    width: 730px;
+    height: 60vh;
+    margin-right: 20px;
+    overflow: hidden;
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+}
+
+.blogs-container-card-s-main {
+    width: 340px;
+    height: 28.5vh;
+    overflow: hidden;
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.blogs-container-ss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogs-container-card-s {
+    width: 340px;
+    transition: all .4s;
+    height: 28.5vh;
+    background-image: url("https://www.ibm.com/blog/wp-content/uploads/2023/03/code-brain.Original1-scaled.jpg");
+    background-size: cover;
+}
+
+
+
+
+
+
+
+.custom-table-container {
+    width: 100%;
+    overflow-x: auto; /* Yatay kaydırma çubuğu */
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse; /* Sınırları birleştirir */
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.custom-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.custom-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternatif satır rengi */
+}
+
+.blogs-container-card-l {
+    display: flex;
+    justify-content: center;
+    width: 730px;
+    height: 60vh;
+    transition: all .4s;
+}
+.blogs-container-card-l-main:hover .blogs-container-card-l {
+    transform: scale(1.1);
+}
+
+.blogs-container-card-s-main:hover .blogs-container-card-s {
+    transform: scale(1.1);
+}
+
+.blogs-cards-text {
+    position: absolute;
+    padding: 20px 30px;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(2px);
+    
+}
+
+.blogs-cards-text h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+    .blogs-container-card-l-main , .blogs-container-card-s-main{
+        width: 390px !important;
+        height: 200px !important;
+        background-size: cover;
+        margin: 20px 0 !important;
+        overflow: hidden;
+    }
+
+    .blogs-container-card-s {
+        width: 390px !important;
+        height: 200px !important;
+        margin: 0 !important;
+    }
+}

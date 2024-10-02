@@ -1,0 +1,36 @@
+.main-tlf-navbar {
+    position: fixed;
+    width: 220px;
+    height: 100vh;
+    background-color: var(--bg-color);
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+.main-tlf-navbar-content ul {
+    margin: 20px;
+}
+
+.main-tlf-navbar-content ul li {
+    list-style: none;
+    margin: 10px 0;
+    padding: 14px;
+
+}
+
+.main-tlf-navbar-content ul li a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.close-btn  {
+    display: flex;
+    justify-content: end;
+    margin: 20px;
+}
+
+.close-btn button .close-btn-i{
+    font-size: 32px;
+    fill: var(--primary-color);
+}

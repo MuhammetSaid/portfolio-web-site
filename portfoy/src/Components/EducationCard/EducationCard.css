@@ -1,0 +1,72 @@
+.main-education-card {
+    margin:30px;
+    margin-bottom: 30px;
+    z-index: 10;
+    border: solid 2px var(--primary-color);
+    padding: 20px;
+}
+
+.main-education-card .main-education-card-content {
+    display: flex;
+    align-items: center;
+}
+
+.main-education-card .education-card-img {
+    width: 200px;
+    height: 120px;
+}
+
+
+
+
+.main-education-card .main-education-card-content .education-card-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.education-card-text {
+    margin: 0 50px;
+}
+
+.education-card-text h2 {
+    margin: 12px 0;
+    color: var(--secondery-color);
+}
+
+.education-card-text p {
+    margin: 6px 0;
+}
+.education-card-text p:nth-child(4) {
+    font-weight: 800;
+}
+
+
+@media screen and (max-width: 992px) {
+    .main-education-card{
+        width: 200px; /* Ekran 992 piksel veya daha küçük olduğunda menüyü gizle */
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .main-education-card {
+        width: 240px !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-education-card-content {
+        display: flex;
+        width: 240px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 !important;
+    }
+    .education-card-text {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

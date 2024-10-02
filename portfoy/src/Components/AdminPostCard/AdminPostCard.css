@@ -1,0 +1,71 @@
+.main-post-card {
+    width: 99.5%;
+    border: solid 2px black;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; 
+
+}
+
+.main-post-card-content {
+    width: 96%;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.post-card-img {
+    width: 260px;
+}
+
+.post-card-img img {
+    width: 100%;
+}
+
+.post-card-text {
+    margin-left: 30px;
+    width: 600px;
+}
+
+.post-card-setting {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-card-setting button {
+    margin: 3px 30px;
+    margin-left: 38px;
+    cursor: pointer;
+}
+
+.post-card-update-btn {
+    padding: 14px 34px;
+    border: solid 2px rgb(255, 89, 29);
+    background-color: rgba(255, 89, 29, 0.373);
+    border-radius: 30px;
+    
+}
+
+.post-card-delete-btn {
+    padding: 14px 34px;
+    border: solid 2px red;
+    background-color: rgba(255, 0, 0, 0.329);
+    border-radius: 30px;
+}
+
+.post-card-task-btn {
+    padding: 14px 34px;
+    border: solid 2px rgb(72, 255, 0);
+    background-color: rgba(72, 255, 0, 0.36);
+    border-radius: 30px;
+}
+
+.content-date p {
+    margin: 8px 0;
+
+}
+
+.content-date h5 {
+    margin: 8px 0;
+    
+}

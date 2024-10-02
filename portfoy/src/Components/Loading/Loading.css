@@ -1,0 +1,16 @@
+/* sphere-loading.css */
+.sphere {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 6px solid rgba(0, 0, 255, 0.2);
+    border-top-color: var(--primary-color); 
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

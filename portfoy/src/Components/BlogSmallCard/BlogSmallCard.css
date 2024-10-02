@@ -1,0 +1,73 @@
+
+.blog-small-card-content {
+    width: 88%;
+    height: 240px;
+    background-color: rgba(0, 0, 0, 0.114);
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    cursor: pointer;
+}
+.blog-small-card-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.447); /* Siyah ve %30 şeffaflıkta kaplama */
+    z-index: -1;
+}
+
+
+.blog-small-card {
+    width: 435.6px;
+    height: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.blog-small-card:hover .blog-small-card-arka{
+    top: 20px;
+    left: 25.4px;
+}
+
+.blog-small-card-arka {
+    width: 88%;
+    height: 240px;
+    position: absolute;
+    background-color: var(--primary-color);
+    top: 42px;
+    left: 46px;
+    transition: all .4s;
+}
+
+
+.blog-small-card-content p {
+    color: var(--bg-color);
+    margin: 10px;
+}
+
+
+
+
+
+.small-card-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 992px) {
+    .blog-small-card {
+        width: 340px;
+    }
+}

@@ -1,0 +1,27 @@
+.mian-views-card {
+    width: 274px;
+    background-color: rgb(255, 255, 255);
+    color: gray;
+    margin: 20px 7px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+}
+.main-views-card-content {
+    width: 90%;
+
+}
+.main-views-card-content h4 {
+    margin: 10px 2px;
+}
+
+.visit-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.visit-h4 {
+    padding: 3px 15px;
+    border-radius: 15px;
+}
